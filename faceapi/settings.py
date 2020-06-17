@@ -74,22 +74,22 @@ WSGI_APPLICATION = 'faceapi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'faceapi_db',
-#         'HOST': '167.99.72.149',
-#         'PORT': '3306',
-#         'USER': 'trainee',
-#         'PASSWORD': 'AIS@trainee',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'faceapi',
+        'HOST': 'localhost',
+        'PORT': '',
+        'USER': 'trainee2',
+        'PASSWORD': 'AIS@trainee',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
